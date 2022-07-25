@@ -1,6 +1,6 @@
 import React from 'react';
 import './topbar.css';
-import { NotificationsNone } from '@material-ui/icons';
+import { NotificationsNone, Language, Settings } from '@material-ui/icons';
 
 export default function Topbar() {
   return (
@@ -10,8 +10,17 @@ export default function Topbar() {
           <span className='logo'>dashboardLogo</span>
         </div>
         <div className='top-right'>
-          <div className='topbar-icons'>
+          <div className='topbar-icons-container'>
             <NotificationsNone />
+            <span className='top-icon-badge'>2</span>
+          </div>
+          <div className='topbar-icons-container'>
+            <Language />
+            <span className='top-icon-badge'>2</span>
+          </div>
+          <div className='topbar-icons-container'>
+            <Settings />
+            <span className='top-icon-badge'>2</span>
           </div>
         </div>
       </div>

@@ -14,6 +14,34 @@
 
 .logo {
   color: darkblue;
+  cursor: pointer;
   font-size: 30px;
   font-weight: bold;
+}
+
+.top-right {
+  align-items: center;
+  display: flex;
+}
+
+.topbar-icons-container {
+  color: #555;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+}
+
+.top-icon-badge {
+  align-items: center;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  font-size: 10px;
+  height: 15px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  width: 15px;
 }
