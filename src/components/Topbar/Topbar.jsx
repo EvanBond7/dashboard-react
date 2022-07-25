@@ -22,6 +22,10 @@ export default function Topbar() {
             <Settings />
             <span className='top-icon-badge'>2</span>
           </div>
+          <img
+            src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Round&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=CollarSweater&clotheColor=Gray02&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Tanned'
+            className='top-avatar'
+          />
         </div>
       </div>
     </div>
