@@ -1,5 +1,11 @@
+import Topbar from './components/Topbar/Topbar';
+
 function App() {
-  return <h2>DASHBOARD APP</h2>;
+  return (
+    <div className='topbar'>
+      <Topbar />
+    </div>
+  );
 }
 
 export default App;
