@@ -25,6 +25,7 @@ export default function Topbar() {
           <img
             src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Round&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=CollarSweater&clotheColor=Gray02&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Tanned'
             className='top-avatar'
+            alt="avatar"
           />
         </div>
       </div>
