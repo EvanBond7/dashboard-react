@@ -3,6 +3,8 @@ import Chart from '../../components/Chart/Chart';
 import FeaturedInfo from '../../components/FeaturedInfo/FeaturedInfo';
 import './home.css';
 import { userData } from '../../db.js';
+import WidgetSmall from '../../components/WidgetSmall/WidgetSmall';
+import WidgetLarge from '../../components/WidgetLarge/WidgetLarge';
 
 export default function Home() {
   return (
@@ -14,6 +16,10 @@ export default function Home() {
         dataKey='Активные пользователи'
         grid
       />
+      <div className='home-widgets'>
+        <WidgetSmall />
+        <WidgetLarge />
+      </div>
     </div>
   );
 }
