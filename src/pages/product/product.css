@@ -28,14 +28,14 @@
   display: flex;
 }
 
-.product-top-left,
-.product-top-right {
+.product-top-left {
   flex: 1;
 }
 
 .product-top-right {
   padding: 20px;
   margin: 20px;
+  flex: 1;
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
@@ -50,7 +50,8 @@
 
 .product-info-top {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  margin-left: 350px;
 }
 
 .product-name {

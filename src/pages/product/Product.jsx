@@ -28,7 +28,6 @@ export default function Product() {
               alt=''
               className='product-info-img'
             />
-            <span className='product-name'>Sony PlayStation 5</span>
           </div>
           <div className='product-info-bottom'>
             <div className='product-info-item'>
