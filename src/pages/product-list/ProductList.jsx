@@ -18,7 +18,7 @@ export default function ProductList() {
     { field: 'id', headerName: 'ID', width: 90 },
     {
       field: 'product',
-      headerName: 'Product',
+      headerName: 'Наименование',
       width: 200,
       renderCell: (params) => {
         return (
@@ -29,26 +29,26 @@ export default function ProductList() {
         );
       },
     },
-    { field: 'stock', headerName: 'Stock', width: 200 },
+    { field: 'stock', headerName: 'На складе', width: 200 },
     {
       field: 'status',
-      headerName: 'Status',
+      headerName: 'Статус',
       width: 120,
     },
     {
       field: 'price',
-      headerName: 'Price',
+      headerName: 'Цена',
       width: 160,
     },
     {
       field: 'action',
-      headerName: 'Action',
+      headerName: 'Действия',
       width: 150,
       renderCell: (params) => {
         return (
           <>
             <Link to={'/product/' + params.row.id}>
-              <button className='productListEdit'>Edit</button>
+              <button className='productListEdit'>Изменить</button>
             </Link>
             <DeleteOutline
               className='productListDelete'
