@@ -13,6 +13,7 @@ import {
   TrendingUp,
   WorkOutline,
 } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 import './sidebar.css';
 
 export default function Sidebar() {
@@ -22,10 +23,12 @@ export default function Sidebar() {
         <div className='sidebar-menu'>
           <h3 className='siderbar-title'>Информационная панель</h3>
           <ul className='sidebar-list'>
-            <li className='sidebar-list-item active'>
-              <LineStyle className='sidebar-icon' />
-              Главная
-            </li>
+            <Link to='/' className='link'>
+              <li className='sidebar-list-item active'>
+                <LineStyle className='sidebar-icon' />
+                Главная
+              </li>
+            </Link>
             <li className='sidebar-list-item'>
               <Timeline className='sidebar-icon' />
               Аналитика
@@ -39,14 +42,18 @@ export default function Sidebar() {
         <div className='sidebar-menu'>
           <h3 className='siderbar-title'>Быстрый доступ</h3>
           <ul className='sidebar-list'>
-            <li className='sidebar-list-item active'>
-              <PermIdentity className='sidebar-icon' />
-              Пользователи
-            </li>
-            <li className='sidebar-list-item'>
-              <Storefront className='sidebar-icon' />
-              Продукты
-            </li>
+            <Link to='/users' className='link'>
+              <li className='sidebar-list-item active'>
+                <PermIdentity className='sidebar-icon' />
+                Пользователи
+              </li>
+            </Link>
+            <Link to='/products' className='link'>
+              <li className='sidebar-list-item'>
+                <Storefront className='sidebar-icon' />
+                Продукты
+              </li>
+            </Link>
             <li className='sidebar-list-item'>
               <AttachMoney className='sidebar-icon' />
               Транзакции
