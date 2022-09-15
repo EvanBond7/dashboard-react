@@ -1,9 +1,10 @@
 import React from 'react';
 import './widgetLarge.css';
+import customerProfile from '../../assets/profile/customer_profile.png';
 
 export default function WidgetLarge() {
-  const Button = ({ type }) => {
-    return <button className={'widgetLgButton ' + type}>{type}</button>;
+  const Button = ({ type, status }) => {
+    return <button className={'widget-lg-button ' + type}>{status}</button>;
   };
 
   return (
@@ -19,61 +20,61 @@ export default function WidgetLarge() {
         <tr className='widget-lg-tr'>
           <td className='widget-lg-user'>
             <img
-              src='https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-              alt=''
+              src={customerProfile}
+              alt='покупатель'
               className='widget-lg-img'
             />
             <span className='widget-lg-name'>Евгений Зимин</span>
           </td>
-          <td className='widget-lg-date'>2 Мая 2022</td>
-          <td className='widget-lg-amount'>5000&#x20bd;</td>
+          <td className='widget-lg-date'>17 Мая 2022</td>
+          <td className='widget-lg-amount'>50000&#x20bd;</td>
           <td className='widget-lg-status'>
-            <Button type='Approved' />
+            <Button status='Выполнена' type='Approved' />
           </td>
         </tr>
         <tr className='widget-lg-tr'>
           <td className='widget-lg-user'>
             <img
-              src='https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-              alt=''
+              src={customerProfile}
+              alt='покупатель'
               className='widget-lg-img'
             />
             <span className='widget-lg-name'>Евгений Зимин</span>
           </td>
-          <td className='widget-lg-date'>2 Мая 2022</td>
-          <td className='widget-lg-amount'>5000&#x20bd;</td>
+          <td className='widget-lg-date'>12 Мая 2022</td>
+          <td className='widget-lg-amount'>50000&#x20bd;</td>
           <td className='widget-lg-status'>
-            <Button type='Approved' />
+            <Button status='Выполнена' type='Approved' />
           </td>
         </tr>
         <tr className='widget-lg-tr'>
           <td className='widget-lg-user'>
             <img
-              src='https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-              alt=''
+              src={customerProfile}
+              alt='покупатель'
               className='widget-lg-img'
             />
             <span className='widget-lg-name'>Евгений Зимин</span>
           </td>
-          <td className='widget-lg-date'>2 Мая 2022</td>
-          <td className='widget-lg-amount'>5000&#x20bd;</td>
+          <td className='widget-lg-date'>7 Мая 2022</td>
+          <td className='widget-lg-amount'>50000&#x20bd;</td>
           <td className='widget-lg-status'>
-            <Button type='Approved' />
+            <Button type='Declined' status='Отказ' />
           </td>
         </tr>
         <tr className='widget-lg-tr'>
           <td className='widget-lg-user'>
             <img
-              src='https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-              alt=''
+              src={customerProfile}
+              alt='покупатель'
               className='widget-lg-img'
             />
             <span className='widget-lg-name'>Евгений Зимин</span>
           </td>
-          <td className='widget-lg-date'>2 Мая 2022</td>
-          <td className='widget-lg-amount'>5000&#x20bd;</td>
+          <td className='widget-lg-date'>4 Мая 2022</td>
+          <td className='widget-lg-amount'>50000&#x20bd;</td>
           <td className='widget-lg-status'>
-            <Button type='Approved' />
+            <Button type='Pending' status='Ожидание' />
           </td>
         </tr>
       </table>

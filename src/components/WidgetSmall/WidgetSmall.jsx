@@ -1,5 +1,7 @@
 import React from 'react';
 import { Visibility } from '@material-ui/icons';
+import mariaProfile from '../../assets/profile/maria_profile.png';
+
 import './widgetSmall.css';
 
 export default function WidgetSmall() {
@@ -9,8 +11,8 @@ export default function WidgetSmall() {
       <ul className='widget-sm-list'>
         <li className='widget-sm-list-item'>
           <img
-            src='https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500'
-            alt=''
+            src={mariaProfile}
+            alt='Мария Знатина'
             className='widget-sm-img'
           />
           <div className='widget-sm-user'>
@@ -19,13 +21,13 @@ export default function WidgetSmall() {
           </div>
           <button className='widget-sm-button'>
             <Visibility className='widget-sm-icon' />
-            Display
+            Просмотр
           </button>
         </li>
         <li className='widget-sm-list-item'>
           <img
-            src='https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500'
-            alt=''
+            src={mariaProfile}
+            alt='Мария Знатина'
             className='widget-sm-img'
           />
           <div className='widget-sm-user'>
@@ -34,13 +36,13 @@ export default function WidgetSmall() {
           </div>
           <button className='widget-sm-button'>
             <Visibility className='widget-sm-icon' />
-            Display
+            Просмотр
           </button>
         </li>
         <li className='widget-sm-list-item'>
           <img
-            src='https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500'
-            alt=''
+            src={mariaProfile}
+            alt='Мария Знатина'
             className='widget-sm-img'
           />
           <div className='widget-sm-user'>
@@ -49,13 +51,13 @@ export default function WidgetSmall() {
           </div>
           <button className='widget-sm-button'>
             <Visibility className='widget-sm-icon' />
-            Display
+            Просмотр
           </button>
         </li>
         <li className='widget-sm-list-item'>
           <img
-            src='https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500'
-            alt=''
+            src={mariaProfile}
+            alt='Мария Знатина'
             className='widget-sm-img'
           />
           <div className='widget-sm-user'>
@@ -64,13 +66,13 @@ export default function WidgetSmall() {
           </div>
           <button className='widget-sm-button'>
             <Visibility className='widget-sm-icon' />
-            Display
+            Просмотр
           </button>
         </li>
         <li className='widget-sm-list-item'>
           <img
-            src='https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500'
-            alt=''
+            src={mariaProfile}
+            alt='Мария Знатина'
             className='widget-sm-img'
           />
           <div className='widget-sm-user'>
@@ -79,7 +81,7 @@ export default function WidgetSmall() {
           </div>
           <button className='widget-sm-button'>
             <Visibility className='widget-sm-icon' />
-            Display
+            Просмотр
           </button>
         </li>
       </ul>
