@@ -17,7 +17,7 @@ export default function User() {
       <div className='user-title-container'>
         <h1 className='user-title'>Редактировать пользователя</h1>
         <Link to='/newUser'>
-          <button className='user-add-button'>Create</button>
+          <button className='user-add-button'>Создать</button>
         </Link>
       </div>
       <div className='user-container'>
@@ -39,7 +39,7 @@ export default function User() {
             <span className='user-show-title'>Учетная запись</span>
             <div className='user-show-info'>
               <PermIdentity className='user-show-icon' />
-              <span className='user-show-info-title'>jannaL95</span>
+              <span className='user-show-info-title'>jannaV95</span>
             </div>
             <div className='user-show-info'>
               <CalendarToday className='user-show-icon' />
@@ -65,10 +65,10 @@ export default function User() {
           <form className='user-update-form'>
             <div className='user-update-left'>
               <div className='user-update-item'>
-                <label>юзернейм</label>
+                <label>Логин</label>
                 <input
                   type='text'
-                  placeholder='annabeck99'
+                  placeholder='jannaV95'
                   className='user-update-input'
                 />
               </div>
@@ -109,15 +109,15 @@ export default function User() {
               <div className='user-update-upload'>
                 <img
                   className='user-update-img'
-                  src='https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
-                  alt=''
+                  src={jannaProfile}
+                  alt='изменить фото пользователя'
                 />
                 <label htmlFor='file'>
                   <Publish className='user-update-icon' />
                 </label>
                 <input type='file' id='file' style={{ display: 'none' }} />
               </div>
-              <button className='user-update-button'>Update</button>
+              <button className='user-update-button'>Обновить</button>
             </div>
           </form>
         </div>

@@ -7,11 +7,11 @@ export default function NewUser() {
       <h1 className='new-user-title'>Новый пользователь</h1>
       <form className='new-user-form'>
         <div className='new-user-item'>
-          <label>Юзернейм</label>
+          <label>Имя пользователя</label>
           <input type='text' placeholder='anna_92' />
         </div>
         <div className='new-user-item'>
-          <label>Полное Имя</label>
+          <label>Полное имя</label>
           <input type='text' placeholder='Анна Линева' />
         </div>
         <div className='new-user-item'>
