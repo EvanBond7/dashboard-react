@@ -92,7 +92,7 @@ export default function User() {
                 <label>Телефон</label>
                 <input
                   type='text'
-                  placeholder='+1 123 456 67'
+                  placeholder='+7 123 456 67 89'
                   className='user-update-input'
                 />
               </div>
